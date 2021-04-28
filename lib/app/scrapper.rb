@@ -51,7 +51,7 @@ class Scrapper
   end
 
   def save_as_spreadsheet(email_list)
-    session = GoogleDrive::Session.from_config("config.json")
+    session = GoogleDrive::Session.from_config("/Users/laurabreban/Desktop/THP2/JOUR3/config.json")
     ws = session.spreadsheet_by_key("19F8xUB5Ks2NsgfjALNG2OyX0hl1VqoajnLindjSsJsc").worksheets[0]
     ws[1, 1] = "Town"
     ws[1, 2] = "Email"
